@@ -1,7 +1,7 @@
-<p> this is paragraph tag</p>
+<p>this is paragraph </p>
 
 <div class="container ">
-    <h2>application form  </h2> 
+    <h2>{{formtitle}}</h2> 
     <form action="">
 username <br>
 <input type="text" ><br><br>
@@ -9,4 +9,17 @@ passworad <br>
 <input type="password" > <br><br>
 <button>click</button>
     </form>
+<h1> {{stringinterpolation()}}</h1>
+<input type="text" [value]=" myname">
+<br>
+<input type="radio" [checked]="gender"> <br><br>
+
+
+
 </div>
+<input type="text" [disabled]='isdisabled'> <br>
+ <input type="text" disabled="{{isdisabled }} ">
+ <br>
+ <button (click)="testeventbinding()">click...</button>
+ {{this.myname}}
+ <input type="text" [(ngmodule)]="twowaydetabindingtest">
